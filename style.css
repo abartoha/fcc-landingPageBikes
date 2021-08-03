@@ -1,0 +1,52 @@
+.nav-logo{
+    width: 90px;
+}
+
+#video{
+    max-width: 600px;
+    width: 90%;
+}
+
+.card-custom{
+    min-height: 170px;
+}
+
+li {
+    list-style: none;   
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 30px;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+footer > ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer > ul > li {
+    padding: 0 10px;
+}
+
+footer > span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+}
+@media screen and (max-width: 425px){
+    .body-container{
+        width: 100vw;
+    }
+    #video{
+        height: auto;
+    }
+}
