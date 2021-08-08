@@ -1,5 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body{
+    font-family: 'Bebas Neue', cursive;
+}
+
+h1{
+    font-family: "Anton", sans-serif;
+}
+
 .nav-logo{
-    width: 90px;
+    width: 70px;
+}
+
+.fun-div{
+    display:none;
 }
 
 #video{
@@ -9,6 +24,10 @@
 
 .card-custom{
     min-height: 170px;
+}
+
+.text-height-full {
+    height: 100px;
 }
 
 li {
@@ -45,6 +64,53 @@ footer > span {
 @media screen and (max-width: 425px){
     .body-container{
         width: 100vw;
+    }
+    .fun-div{
+        display:flex;
+        justify-content: center;
+        height:calc(100vh - 66.2px);
+    }
+    .fun-div .img-con{
+        height: 100%;
+        width: 100vw;
+        z-index: 2;
+    }
+
+    .img-con img{
+        width: 100%;
+    }
+
+    .fun-div .h1-con{
+        position: absolute;
+        top: 15%;
+        z-index: 3;
+        color: grey;
+        transition: background-color 0.5s cubic-bezier(0.47, 0, 0.745, 0.715);
+        transition-delay: 0.3s;
+        width: 100vw;
+        height: 4rem;
+    }
+    .h1-move {
+        position: absolute;
+        color: grey;
+        top: 20%;
+        left: -50%;
+        transition: left 1s cubic-bezier(0,.39,.83,1.37);
+
+    }
+    .fun-div .h1-con:hover{
+        background-color: black;
+    }
+    .fun-div .h1-con:hover .bikes{
+        color: white;
+    }
+    .fun-div .h1-con:hover .h1-move{
+        left: 25%;
+    }
+    .bikes{
+        color: black;
+        transition: color 0.7s cubic-bezier(0.47, 0, 0.745, 0.715);
+        transition-delay: 0.5s;
     }
     #video{
         height: auto;
